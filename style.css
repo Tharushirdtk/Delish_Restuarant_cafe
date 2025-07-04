@@ -659,9 +659,20 @@ footer {
 
 /* Reservation form  */
 .reservation-section {
-  background-color: var(--bg-light);
+  background-color: var(--white);
   padding: 60px 20px;
   font-family: var(--font-main);
+}
+
+.reservation-section-container{
+  background-color: var(--light-bg);
+  max-width: 1000px;
+  max-height: -20px;
+  margin: auto;
+  padding: 30px;
+  align-items: center;
+  gap: 90px;
+  justify-content: space-between;
 }
 
 .reservation-container {
@@ -690,7 +701,7 @@ footer {
 
 .section-title {
   font-size: 28px;
-  color: var(--text-dark);
+  color: var(--dark-bg);
   margin-bottom: 8px;
   font-weight: 700;
 }
@@ -747,8 +758,10 @@ footer {
 
 .reservation-image img {
   width: 100%;
-  border-radius: 8px;
+  height: 400px;
   object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 8px;
 }
 
 
