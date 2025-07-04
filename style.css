@@ -371,6 +371,72 @@ footer {
   margin-left: 15px;
 }
 
+/* services  */
+.services {
+  background-color: #fdf8f5;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: var(--secondary);
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--secondary);
+}
+
+.service-card p {
+  color: var(--paragraph);
+  font-size: 15px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.service-card a {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary);
+  text-decoration: none;
+}
+
 
 /* Responsive Layouts */
 @media (max-width: 992px) {
