@@ -1,0 +1,182 @@
+:root {
+  --primary: #CB3A1A;
+  --secondary: #111111;
+  --paragraph: #74787C;
+  --white: #ffffff;
+  --light-bg: #f8f8f8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  background-color: var(--white);
+  color: var(--secondary);
+}
+
+
+.contact-hero{
+  background: url('images/contact.png') center/cover no-repeat;
+  color: var(--white);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.contact-hero p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+
+
+.contact-section {
+  background: #f9f9f9;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center; 
+}
+
+.contact-container {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 100%;
+  align-items: center;
+}
+
+.contact-info {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+}
+
+.contact-info h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  color: #888;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.info-item i {
+  color: #CB3A1A;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.info-item strong {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.closed {
+  color: #CB3A1A;
+}
+
+.contact-form{
+ background-color: var(--white);
+  padding: 60px 20px;
+  font-family: var(--font-main);
+  max-width: 1000px;
+  max-height: -20px;
+  margin: auto;
+  align-items: center;
+  gap: 90px;
+  justify-content: space-between;
+}
+
+.leave-message {
+  background: #f5f5f5;
+  padding: 40px;
+  flex: 2;
+  min-width: 300px;
+}
+
+.leave-message h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.leave-message p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.leave-message form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 120px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.leave-message button {
+  background: #CB3A1A;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.leave-message button:hover {
+  background: #a83012;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
