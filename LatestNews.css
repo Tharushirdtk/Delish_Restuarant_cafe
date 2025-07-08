@@ -1,0 +1,268 @@
+:root {
+  --primary: #CB3A1A;
+  --secondary: #111111;
+  --paragraph: #74787C;
+  --white: #ffffff;
+  --light-bg: #f8f8f8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  background-color: var(--white);
+  color: var(--secondary);
+}
+
+/* Blog Hero Section */
+.blog-hero {
+  background: url('images/LatestNews.png') center/cover no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: var(--white);
+}
+
+.blog-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* Blog Container */
+.blog-section {
+  padding: 60px 20px;
+  background: var(--light-bg);
+}
+
+.blog-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+
+.blog-main {
+  flex: 0 0 65%;
+}
+
+.blog-sidebar {
+  flex: 0 0 30%;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Blog Item */
+.blog-item {
+  background: var(--white);
+  border: 1px solid #eee;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.blog-item:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.blog-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-item .blog-meta {
+  padding: 15px 25px 0;
+  font-size: 13px;
+  color: #888;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.blog-item h3 {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px 25px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.blog-item p {
+  padding: 0 25px 20px;
+  font-size: 15px;
+  color: var(--paragraph);
+}
+
+.blog-item a {
+  display: inline-block;
+  margin: 0 25px 20px;
+  font-size: 14px;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.blog-item a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar Widgets */
+.sidebar-widget {
+  margin-bottom: 40px;
+}
+
+.sidebar-widget h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-box button {
+  width: 40px;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.recent-posts ul,
+.categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-posts ul li,
+.categories ul li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.recent-posts img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.categories li a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.categories li a:hover {
+  color: var(--primary);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  background: #eee;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.tags span:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.pagination a {
+  padding: 8px 14px;
+  background: #f2f2f2;
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pagination a.active,
+.pagination a:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+@media (max-width: 1024px) {
+  .blog-container {
+    flex-direction: column;
+  }
+
+  .blog-main,
+  .blog-sidebar {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-hero h1 {
+    font-size: 32px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tags {
+    gap: 5px;
+  }
+
+  .tags span {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
