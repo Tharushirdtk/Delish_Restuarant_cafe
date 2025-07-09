@@ -16,7 +16,7 @@ body {
 
 /* Blog Detail Wrapper */
 .blog-hero {
-  background: url('images/LatestNews.png') center/cover no-repeat;
+  background: url('images/blog-detail.png') center/cover no-repeat;
   padding: 100px 20px;
   text-align: center;
   color: var(--white);
