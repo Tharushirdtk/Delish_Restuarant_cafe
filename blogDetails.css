@@ -15,13 +15,13 @@ body {
 }
 
 /* Blog Detail Wrapper */
+
 .blog-hero {
   background: url('images/blog-detail.png') center/cover no-repeat;
   padding: 100px 20px;
   text-align: center;
   color: var(--white);
 }
-
 .blog-hero h1 {
   font-size: 48px;
   font-weight: 700;
