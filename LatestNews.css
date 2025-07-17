@@ -15,7 +15,7 @@ body {
 
 /* Blog Hero Section */
 .blog-hero {
-  background: url('images/LatestNews.png') center/cover no-repeat;
+  background: url('images/latest news.png') center/cover no-repeat;
   padding: 100px 20px;
   text-align: center;
   color: var(--white);
