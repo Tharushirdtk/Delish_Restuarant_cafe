@@ -15,17 +15,23 @@ body {
 }
 
 /* Blog Detail Wrapper */
-
-.blog-hero {
-  background: url('images/blog details.png') center/cover no-repeat;
+.hero-section-BD {
+  background: url('images/blog-detail.png') center/cover no-repeat;
+  color: var(--white);
   padding: 100px 20px;
   text-align: center;
-  color: var(--white);
 }
-.blog-hero h1 {
+
+.hero-section-BD h1 {
   font-size: 48px;
-  font-weight: 700;
+  margin-bottom: 10px;
 }
+
+.hero-section-BD p {
+  font-size: 16px;
+  color: #ddd;
+}
+
 .blog-details-wrapper {
   display: flex;
   gap: 40px;
